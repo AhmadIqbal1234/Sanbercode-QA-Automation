@@ -1,0 +1,29 @@
+{
+  "name": "sanbercode-qa-automation",
+  "version": "1.0.0",
+  "description": "api automation script",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmadIqbal1234/Sanbercode-QA-Automation.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "rachmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmadIqbal1234/Sanbercode-QA-Automation/issues"
+  },
+  "homepage": "https://github.com/AhmadIqbal1234/Sanbercode-QA-Automation#readme",
+  "dependencies": {
+    "chai": "^5.1.2",
+    "jsonschema": "^1.4.1",
+    "mocha": "^10.8.2",
+    "supertest": "^7.0.0"
+  }
+}
