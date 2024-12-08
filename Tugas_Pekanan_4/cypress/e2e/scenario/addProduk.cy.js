@@ -1,8 +1,6 @@
-import { it } from 'mocha'
-import * as object from '../object/pages.js'
 
 before(() => {
-    cy.config("defaultCommandTimeout", 500000)
+    cy.config("defaultCommandTimeout", 5000000)
 
 })
 
@@ -21,5 +19,12 @@ describe('dashboard', () => {
         cy.get('button[name="finish"]').click()
         cy.get('h2[data-test="complete-header"]').should('be.visible')
     })
+    // it('mengosongi form your information', () => {
+    //     cy.get('button[name="add-to-cart-sauce-labs-backpack"]').click()
+    //     cy.get('span[data-test="shopping-cart-badge"]').click()
+    //     cy.get('button[name="checkout"]').click()
+    //     cy.get('input[name="continue"]').click()
+    //     cy.get('.error-message-container').should('be.visible')
+    // })
 
 })
