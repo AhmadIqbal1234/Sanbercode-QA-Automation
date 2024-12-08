@@ -15,20 +15,17 @@ describe('Login', () => {
     cy.get(object.btn_login).click()
     cy.get('.error-message-container').should('be.visible')
   })
-  // it('password invalid', () => {
-  //   cy.get(object.input_username).type('standard_user')
-  //   cy.get(object.input_password).type('testing')
-  //   cy.get(object.btn_login).click()
-  //   cy.get('.error-message-container').should('be.visible')
-  // })
-  // it('username & password kosong', () => {
-  //   cy.visit(Cypress.env('baseUrl'))
-  //   cy.get(object.input_username).type('')
-  //   cy.get(object.input_password).type('')
-  //   cy.get(object.btn_login).click()
-  //   cy.get('.error-message-container').should('be.visible')
-  // })
-  // it('passes', () => {
-  //   cy.login('standard_user', 'secret_sauce')
-  // })
+  it('password invalid', () => {
+    cy.get(object.input_username).type('standard_user')
+    cy.get(object.input_password).type('testing')
+    cy.get(object.btn_login).click()
+    cy.get('.error-message-container').should('be.visible')
+  })
+  it('username & password kosong', () => {
+    cy.get(object.btn_login).click()
+    cy.get('.error-message-container').should('be.visible')
+  })
+  it('passes', () => {
+    cy.login('standard_user', 'secret_sauce')
+  })
 })
